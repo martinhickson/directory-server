@@ -26,6 +26,7 @@
     <groupId>org.apache.directory.project</groupId>
     <artifactId>project</artifactId>
     <version>17</version>
+    <relativePath/>
   </parent>
 
   <groupId>org.apache.directory.server</groupId>

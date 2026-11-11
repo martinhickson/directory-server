@@ -286,6 +286,12 @@
                     <exclude>META-INF/BCKEY.DSA</exclude>
                   </excludes>
                 </filter>
+                <filter>
+                  <artifact>org.apache.directory.shared:shared-ldap</artifact>
+                  <excludes>
+                    <exclude>org/apache/directory/shared/ldap/util/SystemUtils.class</exclude>
+                  </excludes>
+                </filter>
               </filters>
             </configuration>
           </execution>
@@ -304,6 +310,14 @@
             <configuration>
               <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
               <shadedArtifactAttached>false</shadedArtifactAttached>
+              <filters>
+                <filter>
+                  <artifact>org.apache.directory.shared:shared-ldap</artifact>
+                  <excludes>
+                    <exclude>org/apache/directory/shared/ldap/util/SystemUtils.class</exclude>
+                  </excludes>
+                </filter>
+              </filters>
             </configuration>
           </execution>
         </executions>
